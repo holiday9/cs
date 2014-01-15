@@ -23,18 +23,23 @@ char *  getBinaryShow(int val, char *);
 
 int main() {
 	int int_val = 0x00359141;
-	float float_val = 0x4A564504;
+	float float_val = 0x4a564504;
+	float float_val2 = 3510593.0;
 	
-	printf("0x00359141 expcted binary desc: 1101011001000101000001\n");
-	char bytes[128];
-	printf("0x00359141 actual  binary desc: %s \n", getBinaryShow(int_val, bytes));
-	printf("0x4A564504 expcted binary desc: 1001010010101100100010100000100\n");
-	printf("0x4A564504 actual  binary desc: %s \n", getBinaryShow(float_val, bytes));
-	printf("%lf = ", float_val);
+	if (float_val == float_val2) {
+		printf("二者相等");
+	} else {
+		printf("二者不相等");
+	}
+	printf("\n");
+
+	printf("3510593.0 十六进制的表示为:\n");
+	show_float(float_val2);
 }
 
 char *  getBinaryShow(int val, char * bytes) {
 	char f[2] = {'0','1'};
+	show_int(val);
 
 	// 获取除以2的所有余数
 	int tmp = val;

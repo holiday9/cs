@@ -18,5 +18,7 @@
 #ifndef _SHOW_BYTES_H_
 #define _SHOW_BYTES_H_
 typedef unsigned char * byte_pointer;
+void show_int(int x);
+void show_float(float x); 
 #endif
 
