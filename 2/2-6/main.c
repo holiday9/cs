@@ -33,7 +33,7 @@ int main() {
 	}
 	printf("\n");
 
-	printf("3510593.0 十六进制的表示为:\n");
+	printf("0x4a564504 表示为10进制数, expected is = 3510593.0, actual = %f\n", float_val);
 	show_float(float_val2);
 }
 

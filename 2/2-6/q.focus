@@ -11,5 +11,6 @@ examle:
 float float_val = 0x4a564504;
 float float_val2 = 3510593.0;
 二者不相等，为什么。
+A:根本原因是0x----的表示法表示的是整数。 
 	
 
