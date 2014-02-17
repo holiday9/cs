@@ -22,19 +22,14 @@
 char *  getBinaryShow(int val, char *);
 
 int main() {
-	int int_val = 0x00359141;
+	int int_val = 0x00359141;    
 	float float_val = 0x4a564504;
-	float float_val2 = 3510593.0;
-	
-	if (float_val == float_val2) {
-		printf("二者相等");
-	} else {
-		printf("二者不相等");
-	}
-	printf("\n");
+	/*
+ 	  问题A的答案
+   		00000000001 1010110010 00101000001
+ 	  0100101001100 1010110010 100000100 
+	*/
 
-	printf("0x4a564504 表示为10进制数, expected is = 3510593.0, actual = %f\n", float_val);
-	show_float(float_val2);
 }
 
 char *  getBinaryShow(int val, char * bytes) {
