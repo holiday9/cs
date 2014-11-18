@@ -1,0 +1,16 @@
+Consider a virtual memory system with a 38-bit virtual byte address, 1KB pages and 512 MB of physical memory. What is the total size of the page table for each process on this machine, assuming that the valid, protection, dirty and use bits take a total of 4 bits, and that all the virtual pages are in use? (assume that disk addresses are not stored in the page table and only one level pte.)
+
+size of pte num = 2^38 / 1k = 2^28
+
+size of one pte:
+1. physical memory base addr = 512m / 1k = 2^19
+2. 4bit
+total = 23bit = 2.875byte
+
+total size of page table = 2^28 * 2.875 = 736m
+
+? 物理大小有用吗
+确定物理地址的基础地址。基础地址与偏移量（页大小）共同计算出物理地址。pte中要包含物理地址基址。
+? how to compute virtual space.
+N = 2 ^ n
+
